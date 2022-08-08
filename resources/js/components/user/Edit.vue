@@ -95,7 +95,7 @@ export default {
                     name: this.user.name,
                     email: this.user.email,
                     password: this.user.password,
-                    password_confirmation:this.password_confirmation
+                    password_confirmation:this.user.password_confirmation
                 })
                 .then((response) => {
                      if (response["data"]["status"] == "Error") {
