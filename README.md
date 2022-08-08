@@ -9,4 +9,10 @@ Steps to follow fresh project setup in local system:
 - php artisan db:seed
 - npm install [To install JS dependencies] 
 - npm run dev/watch [To compile css, js]
+- php artisan optimize
 - php artisan serve
+
+
+Super admin login credentials
+User name - superadmin@gmail.com
+Paasword - superadmin@123
