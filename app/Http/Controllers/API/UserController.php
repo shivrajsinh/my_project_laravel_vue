@@ -95,6 +95,7 @@ class UserController extends Controller
     {
         try{
             $input_array = $request->all();
+            $input_array['password'] = Hash::make($request->password);
             $user = User::create($input_array);
             return $this->success(Config::get('constants.USER.USER_ADD_SUCCESS'), 200, $user);
         } catch (\Exception $e) {
@@ -132,6 +133,9 @@ class UserController extends Controller
         try{
             $user = User::find($id);
             $input_array = $request->all();
+            if($request->password){
+                $input_array['password'] = Hash::make($request->password);  
+            }
             $user->update($input_array);
             return $this->success(Config::get('constants.USER.USER_EDIT_SUCCESS'), 200, $user);
         } catch (\Exception $e) {
