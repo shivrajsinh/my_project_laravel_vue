@@ -5,7 +5,9 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use Illuminate\Support\Facades\{Auth, Log, Config};
+use Illuminate\Support\Facades\Auth
+use Illuminate\Support\Facades\Config
+use Illuminate\Support\Facades\Log 
 use App\http\Requests\CreatePost
 use App\http\Requests\UpdatePost
 use App\Traits\ApiResponser;
