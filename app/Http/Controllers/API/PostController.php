@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Support\Facades\{Auth, Log, Config};
-use App\http\Requests\{CreatePost, UpdatePost};
+use App\http\Requests\CreatePost
+use App\http\Requests\UpdatePost
 use App\Traits\ApiResponser;
 
 class PostController extends Controller
