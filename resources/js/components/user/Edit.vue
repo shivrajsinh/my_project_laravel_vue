@@ -20,14 +20,6 @@
                                 Email field is required.
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" v-model="user.password"  />
-                        </div>
-                        <div class="form-group">
-                            <label>Confirm Password</label>
-                            <input type="password" class="form-control" v-model="user.password_confirmation"  />
-                        </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Update User</button>
                     </div>
@@ -94,8 +86,6 @@ export default {
                 .post('/api/user/update/'+this.$route.params.id, {
                     name: this.user.name,
                     email: this.user.email,
-                    password: this.user.password,
-                    password_confirmation:this.user.password_confirmation
                 })
                 .then((response) => {
                      if (response["data"]["status"] == "Error") {
