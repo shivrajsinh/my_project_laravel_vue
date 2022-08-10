@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:r6peLrJL4OQQEiGTnKq+hi3tupzdXUEWGLxt90n0qc4=',
+    'key' => 'base64:h/N0XEeheixNbWYYUov/ubK70yN5eIDZn0YgGJJxhbA=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -184,7 +184,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\framework/cache/data',
+        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -385,12 +385,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\app',
+        'root' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\app/public',
+        'root' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -408,7 +408,7 @@
     ),
     'links' => 
     array (
-      'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\public\\storage' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\app/public',
+      'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\public\\storage' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -443,13 +443,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\logs/laravel.log',
+        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\logs/laravel.log',
+        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -500,7 +500,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\logs/laravel.log',
+        'path' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -558,7 +558,7 @@
     ),
     'from' => 
     array (
-      'address' => 'parth.rana@iwebbracket.com',
+      'address' => 'shivrajsinhrana44@gmail.com',
       'name' => 'Laravel',
     ),
     'markdown' => 
@@ -566,7 +566,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\resources\\views/vendor/mail',
+        0 => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -667,11 +667,11 @@
   ),
   'session' => 
   array (
-    'driver' => 'cookie',
+    'driver' => 'file',
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\framework/sessions',
+    'files' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -691,9 +691,9 @@
   array (
     'paths' => 
     array (
-      0 => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\resources\\views',
+      0 => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\resources\\views',
     ),
-    'compiled' => 'E:\\xampp_php_7_4_16\\htdocs\\my_laravel_demo\\storage\\framework\\views',
+    'compiled' => 'E:\\xampp_php_7_4_16\\htdocs\\my_project_laravel_vue\\storage\\framework\\views',
   ),
   'flare' => 
   array (
