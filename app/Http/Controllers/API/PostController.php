@@ -5,12 +5,13 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use Illuminate\Support\Facades\Auth
-use Illuminate\Support\Facades\Config
-use Illuminate\Support\Facades\Log 
-use App\http\Requests\CreatePost
-use App\http\Requests\UpdatePost
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Log;
+use App\http\Requests\CreatePost;
+use App\http\Requests\UpdatePost;
 use App\Traits\ApiResponser;
+use Illuminate\Support\Facades\Gate;
 
 class PostController extends Controller
 {
@@ -23,11 +24,11 @@ class PostController extends Controller
     public function index()
     {
         try{
-            $user = Auth::user();
-            if ($user->type == "User") {
-                $post = Post::where('user_id', $user->id)->get();
-            } else {
+            if (Gate::allows('isSuperAdmin')) {
                 $post = Post::with('user')->get();
+            }
+            if (Gate::allows('isUser')) {
+                $post = Post::where('user_id', $user->id)->get();
             }
             return $this->success(Config::get('constants.POST.POST_LIST'), 200, $post);
         } catch (\Exception $e) {

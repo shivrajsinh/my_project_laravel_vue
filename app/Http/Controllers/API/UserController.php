@@ -7,9 +7,14 @@ use App\Models\User;
 use App\Events\SendMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\{Hash, Log, Config};
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Config;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\{RegistrationUser, Login, CreateUser, UpdateUser};
+use App\Http\Requests\RegistrationUser;
+use App\Http\Requests\Login;
+use App\Http\Requests\CreateUser;
+use App\Http\Requests\UpdateUser;
 use App\Traits\ApiResponser;
 
 class UserController extends Controller
